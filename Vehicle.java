@@ -1,10 +1,10 @@
 /*
 * This is a program that gets the Vehicle status
-* from Vehicle to carStatus
+* from Vehicle to Main
 *
 * @author  Jackson Naufal
 * @version 1.0
-* @since   2022-10-24
+* @since   2022-11-02
 */
 
 /**

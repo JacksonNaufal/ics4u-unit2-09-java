@@ -1,15 +1,15 @@
 /*
-* This is a program that gets the Vehicle status
-* from Vehicle to carStatus
+* This is a program that gets the Truck status
+* from Truch to Main
 *
 * @author  Jackson Naufal
 * @version 1.0
-* @since   2022-10-24
+* @since   2022-11-02
 */
 
 /**
- * This is the class for Vehicle.
- * Make class Vehicle.
+ * This is the class for Truck.
+ * Make class Truck.
  */
 
 public class Truck extends Vehicle {
@@ -50,12 +50,15 @@ public class Truck extends Vehicle {
     }
 
     /**
-     * This is the air pressure breaking method.
+     * This is the breaking method.
      *
-     * @param airPressure this is the air pressure.
+     * @param breakPower the break power.
+     * @param breakTime the break time.
+     * @param airPressure the air pressure.
      */
-    public void provideAir(int airPressure) {
-        super.setSpeed(super.getSpeed() - airPressure / 2);
+    public void breaking(int breakPower, int breakTime, int airPressure) {
+        super.setSpeed(super.getSpeed() - (breakPower * breakTime)
+                       - (airPressure * breakTime));
 
         if (super.getSpeed() < 0) {
             super.setSpeed(0);

@@ -1,15 +1,15 @@
 /*
-* This is a program that gets the Vehicle status
-* from Vehicle to carStatus
+* This is a program that gets the Bicycle status
+* from Bicycle to Main
 *
 * @author  Jackson Naufal
 * @version 1.0
-* @since   2022-10-24
+* @since   2022-11-02
 */
 
 /**
- * This is the class for Vehicle.
- * Make class Vehicle.
+ * This is the class for Bicycle.
+ * Make class Bicycle.
  */
 
 public class Bicycle extends Vehicle {
